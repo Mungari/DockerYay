@@ -4,7 +4,7 @@ Useful docker commands:
 docker save [-o FILENAME] IMAGE_NAME[:TAG]                                               
 -o -> Output file (e.g file.tar) *can be gzipped, will be unzipped by load*              
                                                                                          
-## docker save -o mysql.tar registry.access.redhat.com/rhscl/mysql-56-rhel7 ## EXAMPLE   
+## docker save -o mysql.tar registry.access.redhat.com/rhscl/mysql-56-rhel7  
 ------------------------------------------------------------------------------------------
 
 
@@ -12,7 +12,7 @@ docker save [-o FILENAME] IMAGE_NAME[:TAG]
 docker load [-i FILENAME]                                                                
                                                                                          
 -i -> input                                                                              
-## docker load -i mysql.tar ##                                                           
+## docker load -i mysql.tar                                                            
 ------------------------------------------------------------------------------------------
 
 
