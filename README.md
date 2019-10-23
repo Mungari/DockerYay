@@ -59,18 +59,18 @@ Commands/syntax:
    *INSTRUCTION* arguments
    example:
 # This is a comment line
-FROM rhel7.3
-LABEL description="This is a custom httpd container image"
-MAINTAINER John Doe <jdoe@xyz.com>
-RUN yum install -y httpd
-EXPOSE 80
-ENV LogLevel "info"
+FROM rhel7.3 
+LABEL description="This is a custom httpd container image" 
+MAINTAINER John Doe <jdoe@xyz.com> 
+RUN yum install -y httpd 
+EXPOSE 80 
+ENV LogLevel "info" 
 ADD http://someserver.com/filename.pdf /var/www/html -> \
                                                           -=> both use root as the owner of the file. Use a RUN instruction to change perms after. 
 COPY ./src/ /var/www/html/ ---------------------------> /
-USER apache
-ENTRYPOINT ["/usr/sbin/httpd"] 
-CMD ["-D", "FOREGROUND"]
+USER apache 
+ENTRYPOINT ["/usr/sbin/httpd"]  
+CMD ["-D", "FOREGROUND"] 
 
 3) docker build -t NAME:TAG DIR (if working directory is current directory "." can be used)
 ------------------------------------------------------------------------------------------
