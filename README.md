@@ -20,6 +20,6 @@ docker load [-i FILENAME]
 docker tag IMAGE[:TAG] [REGISTRYHOST/][USERNAME/]NAME[:TAG]                              
                                                                                          
 -i -> input                                                                              
-## docker tag nginx nginx ## -> docker push nginx                                        
+## docker tag nginx nginx -> docker push nginx                                        
 ------------------------------------------------------------------------------------------
 
